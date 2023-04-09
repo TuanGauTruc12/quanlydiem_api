@@ -1,0 +1,6 @@
+export const format = (data) => JSON.stringify(data)
+.replaceAll(':"', "='").replaceAll('"=', " = ")
+.replaceAll('","', "' , ")
+.replaceAll('{"', "").replaceAll('"}', "'")
+.replaceAll('":', " = ").replaceAll(',"', " , ")
+.replaceAll('}', "")
